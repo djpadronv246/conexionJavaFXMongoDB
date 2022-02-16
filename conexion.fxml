@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utl.conexionjavafxmongo.gui.ConexionController">
+   <children>
+      <JFXButton fx:id="btnCrear" layoutX="362.0" layoutY="283.0" onAction="#Insertar" style="-fx-background-color: #d1c5ed;" text="Crear" textAlignment="CENTER" />
+      <JFXTextField fx:id="txtNuevoRegistro" layoutX="223.0" layoutY="193.0" prefHeight="30.0" prefWidth="265.0" />
+      <Label layoutX="28.0" layoutY="118.0" text="BASE DE DATOS: abarrotes" textAlignment="CENTER" textFill="#0011ff">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnActualizar" layoutX="426.0" layoutY="283.0" onAction="#Actualizar" style="-fx-background-color: #6496c8;" text="Actualizar" textAlignment="CENTER" textFill="WHITE" />
+      <JFXButton fx:id="btnEliminar" layoutX="510.0" layoutY="283.0" onAction="#Eliminar" style="-fx-background-color: #ed1c24;" text="Eliminar" textAlignment="CENTER" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="133.0" prefHeight="30.0" prefWidth="560.0" text="Si desea crear, ingrese el registro, si desea actualizar registros, ingrese el registro a cambiar y la actualización," textAlignment="JUSTIFY">
+         <font>
+            <Font name="Century Gothic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="148.0" prefHeight="30.0" prefWidth="560.0" text="finalmente, si desea eliminar coloque el registro y presione el boton correspondiente ." textAlignment="JUSTIFY">
+         <font>
+            <Font name="Century Gothic" size="10.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtReemplazo" layoutX="274.0" layoutY="232.0" prefHeight="30.0" prefWidth="265.0" />
+      <Label layoutX="44.0" layoutY="201.0" text="Nuevo registro/actualización:" textAlignment="CENTER" textFill="#3f0ac6">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="247.0" text="Registro antiguo a reemplazar/eliminar:" textAlignment="CENTER" textFill="#1dd7ab">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="111.0" prefWidth="600.0" style="-fx-background-color: #008080;">
+         <children>
+            <Label layoutX="168.0" layoutY="44.0" text="CONEXIÓN JAVA-MONGODB" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Candara Light Italic" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="93.0" layoutX="45.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/MongoJava.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Circle fill="DODGERBLUE" layoutX="28.0" layoutY="208.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="28.0" layoutY="254.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <JFXButton fx:id="btnConectar" layoutX="494.0" layoutY="166.0" onAction="#Conectar" style="-fx-background-color: #fffa97;" text="Conexión" textAlignment="CENTER" />
+      <JFXTextArea fx:id="txtCodigo" layoutX="15.0" layoutY="316.0" prefHeight="70.0" prefWidth="570.0" style="-fx-background-color: #f1dff5;" />
+      <JFXButton fx:id="btnLimpiar" layoutX="62.0" layoutY="283.0" onAction="#Limpiar" style="-fx-background-color: #c3ecd9;" text="Limpiar" />
+   </children>
+</AnchorPane>
